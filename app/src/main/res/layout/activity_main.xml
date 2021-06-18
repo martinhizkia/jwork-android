@@ -2,12 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#f4f4f4"
     android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcomeName"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/poppins_bold_700"
+        android:minHeight="50dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Hi, {NAME}"/>
+
 
     <ExpandableListView
         android:id="@+id/lvExp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/btnApplyJob"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium_500"
+        android:text="Apply Job"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>

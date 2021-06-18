@@ -1,15 +1,20 @@
-package martinhizkia.jwork_android;
+package com.example.jwork_android.request;
 
-import java.util.HashMap;
-import java.util.Map;
+
+import android.content.SharedPreferences;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class LoginRequest extends StringRequest {
 
-    private static final String URL = "http://192.168.56.1:8080/jobseeker/login";
+    private static final String URL = "http://192.168.1.5:8080/jobseeker/login";
     private Map<String, String> params;
 
     public LoginRequest(String email, String password, Response.Listener<String> listener){

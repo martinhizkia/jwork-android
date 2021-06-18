@@ -1,4 +1,4 @@
-package martinhizkia.jwork_android;
+package com.example.jwork_android.request;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MenuRequest extends StringRequest {
-    private static final String URL = "http://10.0.2.2:8080/job";
+    private static final String URL = "http://192.168.1.5:8080/job";
     private Map<String,String> params;
 
     public MenuRequest(Response.Listener<String> listener) {

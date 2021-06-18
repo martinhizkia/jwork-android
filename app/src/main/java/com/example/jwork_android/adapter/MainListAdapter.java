@@ -1,5 +1,8 @@
+package com.example.jwork_android.adapter;
 
-package martinhizkia.jwork_android;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -8,8 +11,9 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import com.example.jwork_android.R;
+import com.example.jwork_android.object.Job;
+import com.example.jwork_android.object.Recruiter;
 
 public class MainListAdapter extends BaseExpandableListAdapter {
 
